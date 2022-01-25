@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <title>Cashcount Versi Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- <div class="container pt-lg-4 pt-sm-3">
+            <h1 class="text-center" style="color: rgb(46, 46, 46);">Cashcount</h1>
+        </div> -->
+        <div class="container mt-3">
+            <form action="#" id="form-input" onsubmit="tambahdata()">
+                <div class="row justify-content-end mb-3">
+                    <div class="col col-6">
+                        <label for="#">Indikator</label>
+                        <label for="#"><i class="fas fa-thumbs-up" style="color: blue;"></i></label>
+                        <label for="#"><i class="fas fa-times-circle" style="color: red;"></i></label>
+                    </div>
+                    <div class="col col-6">
+                        <input type="text" class="form-control my-1">
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="100rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="75rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="50rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="20rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="10rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="5rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="2rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="1rb.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="1000coin.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="500coin.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="200coin.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col col-lg-4">
+                        <div class="input-group input-group-sm my-1">
+                            <img src="100coin.png" width="70" class="me-2"> X
+                            <input type="text" class="form-control mx-2 input-uang" style="border-radius: 5px;"> =
+                            <input type="text" class="form-control mx-2 hasil" style="border:none" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-sm-4">
+                        <button type="submit" class="btn btn-dark my-1">Tambah</button>
+                    </div>
+                    <div class="col col-sm-8">
+                        <input type="text" class="form-control my-1 total text-end" readonly>
+                    </div>
+                </div>
+        </div>
+        </form>
+        <div class="container">
+
+            <div class="row my-3 justify-content-center">
+                <div class="col col-lg-12">
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered-sm my-2" id="list-data">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Edit</th>
+                                    <th scope="col">100</th>
+                                    <th scope="col">75</th>
+                                    <th scope="col">50</th>
+                                    <th scope="col">20</th>
+                                    <th scope="col">10</th>
+                                    <th scope="col">5</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">1</th>
+                                    <th scope="col">0,5</th>
+                                    <th scope="col">0,2</th>
+                                    <th scope="col">0,1</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-info">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f3f4f5" fill-opacity="0"
+                d="M0,224L9.6,213.3C19.2,203,38,181,58,176C76.8,171,96,181,115,165.3C134.4,149,154,107,173,106.7C192,107,211,149,230,181.3C249.6,213,269,235,288,224C307.2,213,326,171,346,160C364.8,149,384,171,403,197.3C422.4,224,442,256,461,256C480,256,499,224,518,192C537.6,160,557,128,576,122.7C595.2,117,614,139,634,149.3C652.8,160,672,160,691,138.7C710.4,117,730,75,749,96C768,117,787,203,806,234.7C825.6,267,845,245,864,218.7C883.2,192,902,160,922,154.7C940.8,149,960,171,979,186.7C998.4,203,1018,213,1037,218.7C1056,224,1075,224,1094,186.7C1113.6,149,1133,75,1152,90.7C1171.2,107,1190,213,1210,245.3C1228.8,277,1248,235,1267,197.3C1286.4,160,1306,128,1325,96C1344,64,1363,32,1382,32C1401.6,32,1421,64,1430,80L1440,96L1440,320L1430.4,320C1420.8,320,1402,320,1382,320C1363.2,320,1344,320,1325,320C1305.6,320,1286,320,1267,320C1248,320,1229,320,1210,320C1190.4,320,1171,320,1152,320C1132.8,320,1114,320,1094,320C1075.2,320,1056,320,1037,320C1017.6,320,998,320,979,320C960,320,941,320,922,320C902.4,320,883,320,864,320C844.8,320,826,320,806,320C787.2,320,768,320,749,320C729.6,320,710,320,691,320C672,320,653,320,634,320C614.4,320,595,320,576,320C556.8,320,538,320,518,320C499.2,320,480,320,461,320C441.6,320,422,320,403,320C384,320,365,320,346,320C326.4,320,307,320,288,320C268.8,320,250,320,230,320C211.2,320,192,320,173,320C153.6,320,134,320,115,320C96,320,77,320,58,320C38.4,320,19,320,10,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="kode.js"></script>
+
+</body>
+
+</html>
